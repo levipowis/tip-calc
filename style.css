@@ -1,1 +1,92 @@
+body {
+  background-color: lightgray;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.container {
+  background-color: #fff;
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 20px;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: -65px;
+  width: 300px;
+  transform: translateX(-50%);
+  background-color: #453f80;
+  color: #fff;
+  font-weight: 100;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  color: #453f80;
+  padding: 5px;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+#billAmountInput {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #0074d9;
+  padding: 10px;
+}
+
+#billAmountInput:focus {
+  border: 1px solid #0074d9;
+  outline: none;
+}
+
+.tipPercentageRadioButtons {
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background: #FFF;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 0 1px #453f80;
+}
+
+.tipPercentageRadioButtons:checked {
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  background: #453f80;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 0 1px #453f80;
+}
+
+.radioButtonLabels {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3px;
+  color:#453f80;
+  font-size: 16px;
+}
+
+#calculateTipButton {
+  margin: 20px auto;
+  width: 150px;
+  height: 50px;
+  background-color: #453f80;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}

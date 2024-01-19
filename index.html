@@ -6,35 +6,38 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div id="app">
-      <form id="tipCalculatorForm">
-        <div>
-          <label for="billAmount">Bill Amount:</label>
-          <input type="number" step="0.01" id="billAmount" name="billAmount">
-        </div>
-        <div id="tipPercentageRadioButtons">
-          <div>Tip Percentage:</div>
-          <span>
-            <input type="radio" id="15PercentButton" name="tipPercentage" value="0.15">
-            <label for="15PercentButton">15%</label>
-          </span>
-          <span>
-            <input type="radio" id="18PercentButton" name="tipPercentage" value="0.18">
-            <label for="18PercentButton">18%</label>
-          </span>
-          <span>
-            <input type="radio" id="20PercentButton" name="tipPercentage" value="0.20">
-            <label for="20PercentButton">20%</label>
-          </span>
-          <span>
-            <input type="radio" id="22PercentButton" name="tipPercentage" value="0.22">
-            <label for="22PercentButton">22%</label>
-          </span>
-        </div>
-        <div id="submitButton">
-          <button type="submit">Calculate Tip</button>
-        </div>
-      </form>
+    <div class="container" id="app">
+      <h1>Tip Calculator</h1>
+      <div class="wrapper">
+        <form id="tipCalculatorForm">
+          <div>
+            <h2>Bill Amount</h2>
+            <input type="text" id="billAmountInput" name="billAmount">
+          </div>
+          <div><h2>Tip Percentage</h2></div>
+          <div>
+            <span>
+              <input type="radio" class="tipPercentageRadioButtons" id="15PercentButton" name="tipPercentage" value="0.15">
+              <label class="radioButtonLabels" for="15PercentButton">15%</label>
+            </span>
+            <span>
+              <input type="radio" class="tipPercentageRadioButtons" id="18PercentButton" name="tipPercentage" value="0.18">
+              <label class="radioButtonLabels" for="18PercentButton">18%</label>
+            </span>
+            <span>
+              <input type="radio" class="tipPercentageRadioButtons" id="20PercentButton" name="tipPercentage" value="0.20">
+              <label class="radioButtonLabels" for="20PercentButton">20%</label>
+            </span>
+            <span>
+              <input type="radio" class="tipPercentageRadioButtons" id="22PercentButton" name="tipPercentage" value="0.22">
+              <label  class="radioButtonLabels" for="22PercentButton">22%</label>
+            </span>
+          </div>
+          <div>
+            <button id="calculateTipButton" type="submit">Calculate Tip</button>
+          </div>
+        </form>
+      </div>
       <br>
       <div id="tipAmountOutput"></div>
       <div id="totalAmountOutput"></div>

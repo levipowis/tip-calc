@@ -5,7 +5,7 @@ const tipCalculatorForm = document.getElementById("tipCalculatorForm");
 tipCalculatorForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let billAmount = parseFloat(document.getElementById("billAmount").value);
+  let billAmount = parseFloat(document.getElementById("billAmountInput").value);
   let tipPercentage = parseFloat(document.querySelector("input[type = radio]:checked").value);
   let tipAmount = tipPercentage * billAmount;
   let totalAmount = billAmount + tipAmount;
