@@ -8,30 +8,36 @@
   <body>
     <div id="app">
       <form id="tipCalculatorForm">
-        <div id="billTotal">
-          <label for="billTotal">Bill Total:</label>
-          <input type="number" id="billTotal" name="billTotal">
+        <div>
+          <label for="billAmount">Bill Amount:</label>
+          <input type="number" step="0.01" id="billAmount" name="billAmount">
         </div>
         <div id="tipPercentageRadioButtons">
           <div>Tip Percentage:</div>
           <span>
-            <input type="radio" id="15PercentButton" name="tipPercentageRadioButtons" value="0.15">
+            <input type="radio" id="15PercentButton" name="tipPercentage" value="0.15">
             <label for="15PercentButton">15%</label>
           </span>
           <span>
-            <input type="radio" id="18PercentButton" name="tipPercentageRadioButtons" value="0.18">
+            <input type="radio" id="18PercentButton" name="tipPercentage" value="0.18">
             <label for="18PercentButton">18%</label>
           </span>
           <span>
-            <input type="radio" id="20PercentButton" name="tipPercentageRadioButtons" value="0.20">
+            <input type="radio" id="20PercentButton" name="tipPercentage" value="0.20">
             <label for="20PercentButton">20%</label>
           </span>
           <span>
-            <input type="radio" id="22PercentButton" name="tipPercentageRadioButtons" value="0.22">
+            <input type="radio" id="22PercentButton" name="tipPercentage" value="0.22">
             <label for="22PercentButton">22%</label>
           </span>
         </div>
+        <div id="submitButton">
+          <button type="submit">Calculate Tip</button>
+        </div>
       </form>
+      <br>
+      <div id="tipAmountOutput"></div>
+      <div id="totalAmountOutput"></div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
