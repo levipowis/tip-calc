@@ -2,7 +2,7 @@
 
 Calculates tips based on a given bill amount and selected tip percentage.
 
-**Link to project:** https://tip-calculator-yhym.onrender.com/
+**Link to demo:** https://tip-calculator-yhym.onrender.com/
 
 ## How It's Made:
 
