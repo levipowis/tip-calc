@@ -1,21 +1,30 @@
-# Tip Calculator in HTML/CSS/JavaScript
+# Tip Calculator
 
-## MVP V1
+Calculates tips based on a given bill amount and selected tip percentage.
 
-### Functional Requirements
+**Link to project:** Deploying soon.
 
-1. It should have a text field to input the bill total
-   - Create a form with a "Bill Total" text input field
-   - Give it an id of "billTotal"
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript
+
+I wanted to get back to basics and build something in vanilla HTML, CSS, and JavaScript. I planned out the layout via pen and paper and then wrote a list of the following requirements:
+
+1. It should have a text input for the bill amount
 2. It should have a radio button group to select the tip percentage
-   - Create four radio buttons with labels in a group named "tipPercentage"
-3. It should have a "Calulate Tip" button that runs a function onClick to calculate the tip percentage
-   - Create a submit button with the text "Calculate Tip"
-   - Write a calculateTip() function to get values from the billTotal and tipPercentage then multiplies them together and returns a totalTip value
-   - Add an onClick to the button to call the function
-4. It should have a "Total Tip" output field
-   - Create a "Total Tip" div with a span for "Total Tip" label and a span for output of the totalTip value
-   - Add the totalTip value calculated by the calculateTip() function
-5. It should have a "Total Amount" output field
-   - Create a "Total Amount" div with a span for a label and a span for an output of the totalAmount
-   - Add a totalAmount calculation to the calculateTip() function
+3. It should have a "Calulate Tip" button
+4. It should have a "Total Tip" output div
+5. It should have a "Total Amount" output div
+6. It should have an event listener to run calculations and return data to output divs when button is clicked
+
+## Lessons Learned:
+
+In every project I come across little problems I need to solve and this is how I learn. I can read documentation all day, but I learn by solving a problem in the midst of a project. The following is a list of the little problems I solved along the way of coding this app:
+
+- How to access the value of a checked radio button in JavaScript via .querySelector method
+- Needed to convert strings to floats so I could multiply the billAmount by the tipPercentage. Used parseFloat() to accomplish this.
+- I wanted the output of tipAmount and totalAmount to render as currency so I learned how to use the Intl.NumberFormat constructor.
+- I refreshed my knowledge on how to style using vanilla CSS.
+- Learned to style the radio buttons by looking at multiple examples and then building my own CSS. After this I wanted to line up my percentage labels with the radio buttons and figured this out using display: inline-block
+
+Overall I had a blast building this project! It was fun to sit down and build something from scratch and learn along the way.
