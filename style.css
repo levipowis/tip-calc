@@ -90,3 +90,10 @@ h2 {
   font-size: 18px;
   border-radius: 5px;
 }
+
+#tipAmountOutput, #totalAmountOutput {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  color:#453f80;
+}
