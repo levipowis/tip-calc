@@ -21,7 +21,7 @@ I then followed that list and build everything pretty much in that order.
 
 ## Lessons Learned:
 
-In every project I come across little problems I need to solve and this is how I learn. I can read documentation all day, but I learn by solving a problem in the midst of a project. The following is a list of the little problems I solved along the way of coding this app:
+In every project I come across little problems I need to solve and this is how I learn. I can read documentation all day, but I learn by solving a problem in the midst of a project. The following is a list of the problems I solved along the way of coding this app:
 
 - How to access the value of a checked radio button in JavaScript via .querySelector method
 - Needed to convert strings to floats so I could multiply the billAmount by the tipPercentage. Used parseFloat() to accomplish this.
