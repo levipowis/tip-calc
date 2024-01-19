@@ -1,5 +1,3 @@
-import "./style.css";
-
 const tipCalculatorForm = document.getElementById("tipCalculatorForm");
 
 tipCalculatorForm.addEventListener("submit", (e) => {
